@@ -1,0 +1,258 @@
+*{
+    font-family: 'Roboto', sans-serif;
+    font-size: 10px;
+    background-repeat:no-repeat;
+}
+.container{
+    width: 1082px;
+    background-color: #faf4f2;
+    margin: 0 auto;
+}
+h1, h2, h3{
+    font-family: 'Archivo Black', sans-serif;
+}
+h2{
+    font-size: 22px;
+    letter-spacing: .2px;
+    line-height: 25px;
+}
+.rounded{
+    border-radius: 11px 11px 11px 11px;
+    -moz-border-radius: 11px 11px 11px 11px;
+    -webkit-border-radius: 11px 11px 11px 11px;
+    border: 0px solid #000000;
+}
+/********************************** HEADER STUFF ************************************/
+/********************************** HEADER STUFF ************************************/
+/********************************** HEADER STUFF ************************************/
+.header {
+    background-image:url('../assets/bg.png');
+    background-size: contain;
+    color:#ffffff;
+}
+.header .nav{
+    display: flex;
+    justify-content: flex-start;
+    margin: 0 auto;
+    margin-left: 110px;
+    padding-top: 35px;
+    font-size: 10px;
+}
+.header .logo {
+    width: 29px;
+    height: 29px;
+    background-image: url('../assets/logo.png');
+    background-size: cover;
+    cursor: pointer;
+}
+.header .links{
+    display: flex;
+    align-items: center;
+    margin-left: 28px;
+}
+.header .links ul{
+    display: flex;
+
+}
+.header .links li{
+    list-style-type: none;
+    margin-right: 23px;
+    color: white;
+    cursor: pointer;
+}
+
+.header .login{
+    display: flex;
+    flex-grow: 2;
+    justify-content: center;
+    margin-left: 70px;
+}
+.header .login .cta{
+    padding:5px 20px;
+    cursor:pointer;
+}
+.header .login .sign-in{
+    background-color:transparent;
+    border-radius:28px;
+    border:1px solid #ffffff;
+    display:inline-block;
+}
+.header .hero-content{
+    width: 335px;
+    margin:0 auto;
+    margin-top: 130px;
+    text-align: center;
+}
+.header .hero-content h1{
+    font-size: 44px;
+    letter-spacing: 1px;
+    line-height: 50px;
+}
+.header .hero-content p{
+    margin-top: 30px;
+}
+.header .hero-content .discover{
+    background-color:#e76f51;
+    border-radius:28px;
+    border:1px solid #e76f51;
+    display:inline-block;
+    cursor:pointer;
+    font-family:Arial;
+    padding:4px 37px;
+    text-decoration:none;     
+    margin-top: 22px;
+}
+
+.header .hero-links{
+    width: 855px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-top: 135px;
+}
+.header .hero-links .hero-link{
+    width: 200px;
+    height: 175px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background-color: white;
+    color: black;
+    text-align: center;
+    padding: 0 14px;
+}
+.header .hero-links .hero-link h3{
+    font-weight: bold;
+    color: black;
+    margin-top: 12px;
+}
+.header .hero-links .hero-link p{
+    margin-bottom: 35px;
+}
+.header .hero-links .hero-link .img.bonfire{
+    background-image: url('../assets/bonfire.png');
+}
+.header .hero-links .hero-link .img.tickets{
+    background-image: url('../assets/tickets.png');
+}
+.header .hero-links .hero-link .img.permits{
+    background-image: url('../assets/permits.png');
+}
+.header .hero-links .hero-link .img.fishing{
+    background-image: url('../assets/fishing.png');
+}
+.header .hero-links .hero-link .img{
+    width: 65px;
+    height: 50px;
+    margin: 0 auto;
+    background-size: contain;
+    background-position: center;
+    padding-top:40px;
+}
+/********************************** END HEADER STUFF ******************************/
+
+
+/********************************** START EXPLORE SECTION ************************************/
+/********************************** START EXPLORE SECTION ************************************/
+/********************************** START EXPLORE SECTION ************************************/
+.explore{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    background-image: url(../assets/background-curve.png);
+    background-size: 148%;
+    background-position-x: -305px;
+    background-position-y: -174px;
+    
+}
+.explore h2{
+    margin-top: 22px;
+    margin-bottom: 42px;
+}
+.explore .explore-image{
+    width: 53px;
+    height: 52px;
+    margin-top: 85px;
+    background-image: url('../assets/map.png');
+    background-size: contain;
+}
+.explore .explore-list{
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    display: flex;
+    flex-wrap:wrap;
+    width: 855px;
+}
+.explore .explore-list .card-container{
+    width: 25%;
+}
+.explore .explore-list .card{
+    width: 200px;
+    height: 260px;
+    margin: 0 auto;
+    margin-bottom: 12px;
+    background-color: white;
+    background-image: url('../assets/image-K-11.png');
+    background-size: 157px 102px;
+    background-position-x: center;
+    background-position-y: 22px;
+    padding: 0 12px;
+
+}
+.explore .explore-list .card .heart{
+    width: 23px;
+    height: 23px;
+    background-image: url('../assets/heart-empty.png');
+    background-size: contain;
+    top: 32px;
+    left: 134px;
+    position: relative;
+}
+.explore .explore-list .card .price{
+    width: 82px;
+    height: 25px;
+    color: #e97a5e;
+    background-color: #fff;
+    border-radius: 9px;
+    border: 1px solid #fff;
+    display: inline-block;
+    cursor: pointer;
+    font-family: Arial;
+    padding: 4px 24px;
+    text-decoration: none;
+    text-align: center;
+    margin-top: 87px;
+}
+.explore .explore-list .card h3{
+    margin-top:12px;
+}
+.explore .explore-list .card p{
+    margin-top:2px;
+}
+.explore .explore-list .card .read-more{
+    color: #838383;
+    background-color: #f3f3f3;
+    border-radius: 9px;
+    border: 1px solid #f3f3f3;
+    display: inline-block;
+    cursor: pointer;
+    font-family: Arial;
+    padding: 4px 24px;
+    text-decoration: none;
+    text-align: center;
+    margin-top: 18px;
+}
+.explore .view-all{
+    border-radius:28px;
+    border:1px solid #e76f51;
+    display:inline-block;
+    cursor:pointer;
+    font-family:Arial;
+    padding:6px 37px;
+    text-decoration:none;     
+    margin-top: 22px;
+    color: #e76f51;
+    font-weight: bold;
+}
