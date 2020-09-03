@@ -21,7 +21,6 @@ h2{
     width: 1082px;
     background-color: #faf4f2;
     margin: 0 auto;
-    padding-bottom:2000px;
 }
 /********************************** HEADER STUFF ************************************/
 /********************************** HEADER STUFF ************************************/
@@ -79,7 +78,7 @@ h2{
     display:inline-block;
 }
 .header .hero-content{
-    width: 335px;
+    width: 345px;
     margin:0 auto;
     margin-top: 130px;
     text-align: center;
@@ -335,4 +334,71 @@ h2{
 .email .email-img img{
     height: 92%;
     margin-left: 20px;
+}
+
+/************ END EMAIL SECTION ****************/
+
+/************* START FOOTER *****************/
+/************* START FOOTER *****************/
+/************* START FOOTER *****************/
+.footer{
+    background-color: #f8e1db;
+    margin-top: 102px;
+    padding-top: 60px;
+}
+.footer .footer-container{
+    display: flex;
+    width: 855px;
+    margin: 0 auto;
+}
+
+.footer .footer-container .left{
+    width: 50%;
+}
+.footer .footer-container .right{
+    width: 50%;
+}
+.footer .footer-container h3{
+    margin-bottom: 10px;
+}
+.footer .footer-container p{
+    margin-bottom: 25px;
+}
+
+.footer .footer-container .app-icons{
+    display: flex;
+}
+.footer .footer-container .app-icons .icon{
+    width: 83px;
+    height: 25px;
+    background-size:cover;
+    cursor: pointer;
+}
+.footer .footer-container .app-icons .worst-app{
+    background-image:url('../assets/worst-app.png');
+    margin-right: 5px;
+
+}
+.footer .footer-container .app-icons .best-app{
+    background-image:url('../assets/best-app.png');
+}
+
+.footer .footer-container .right{
+    display:flex;
+    flex-direction: row;
+    justify-content:flex-start;
+    padding-left: 10px;
+}
+
+.footer .footer-container .right .link-row{
+    display:flex;
+    flex-direction: column;
+    cursor: pointer;
+    width: 145px;
+}
+
+.copywrite{
+    margin-top: 40px;
+    text-align: center;
+    padding-bottom:40px;
 }
