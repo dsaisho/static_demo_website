@@ -8,7 +8,7 @@
     <link href='https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap' rel='stylesheet'>
     <link rel='stylesheet' href='./css/reset.css' />
     <link rel='stylesheet' href='./css/styles.css' />
-
+    
 </head>
 <body>
     <div class='container'>
@@ -17,7 +17,7 @@
                 <div class='logo'></div>
                 <div class='links'>
                     <ul>
-                        <li>Home</li>
+                        <li class='active'>Home</li>
                         <li>Destination</li>
                         <li>Near me</li>
                         <li>Events</li>
@@ -38,28 +38,28 @@
                 <div class='cta discover'>Discover</div>
             </div>
             <div class='hero-links'>
-                <div class='hero-link rounded'>
+                <a class='hero-link rounded'>
                     <div class='img bonfire'></div>
                     <h3>Camping & Day Use</h3>
                     <p>Return to your favorite spot or discover a new one that's right for you.</p>
-                </div>
+                </a>
 
-                <div class='hero-link rounded'>
+                <a class='hero-link rounded'>
                     <div class='img tickets'></div>
                     <h3>Tours & Tickets</h3>
                     <p>Reserve Tours and tickets to participate in events.</p>
-                </div>
+                </a>
 
-                <div class='hero-link rounded'>
+                <a class='hero-link rounded'>
                     <div class='img permits'></div>
                     <h3>Permits</h3>
                     <p>Obtain permits for access to high-demand locations.</p>
-                </div>
-                <div class='hero-link rounded'>
+                </a>
+                <a class='hero-link rounded'>
                     <div class='img fishing'></div>
                     <h3>Recreation Activities</h3>
                     <p>Find the best spots for hunting, fishing & recreational shooting.</p>
-                </div>
+                </a>
             </div>
         </div><!--close header-->
         <div class='explore'>
@@ -68,7 +68,7 @@
             <div class='explore-list'>
                 <div class='card-container'>
                     <div class='card rounded'>
-                        <div class='heart'></div>
+                        <div class='heart active'></div>
                         <div class='price'>$36/night</div>
                         <h3>Trickle Creek Ranch</h3>
                         <p>Book unique camping experiences on over 300,000 campsites.</p>
@@ -185,10 +185,13 @@
                 <h2>Let's Stay in Touch</h2>
                 <p>Get travel planning ideas, helpful tips, and stories from our visitors <br/> delivered right to your inbox.</p>
                 <div class='input-container rounded'>
-                    <label>Email Address</label>
-                    <input type='text' />
-                    <div class='submit'></div>
+                    <label id='email-label'>Email Address <span id='validity'></span></span></label>
+                    <input id='email-input' type='email' />
+                    <div id="submit" class='submit cta'></div>
                 </div>
+                <h1 class='email-success'>
+                    Thank you for registering
+                </h1>
             </div>
             <div class='email-img'>
                 <img src='assets/tent.png' alt='cool tent'/>
@@ -197,7 +200,9 @@
         </div><!-- CLOSE EMAIL -->
         
         <div class='footer' id="footer">
+            <div id='go-up' class='cta'></div>
             <div class='footer-container'>
+                
                 <div class='left'>
                     <h3>Hipcamp is everywhere you want to camp.</h3>
                     <p>
@@ -208,8 +213,8 @@
                     </p>
                     <h3>Download Our App</h3>
                     <div class='app-icons'>
-                        <a class='icon worst-app'></a>
-                        <a class='icon best-app'></a>
+                        <a class='icon worst-app cta'></a>
+                        <a class='icon best-app cta'></a>
                     </div>
                 </div>
                 <div class='right'>
@@ -245,5 +250,10 @@
             <div class='copywrite'>© 2020 All rights reserved.</div>
         </div><!-- END FOOTER -->
     </div>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.15.1/plugins/ScrollToPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/TweenLite.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/plugins/CSSPlugin.min.js"></script>
+        <script type='text/javascript' src='js/destinations.js'></script>
+        <script type='text/javascript' src='js/script.js'></script>
 </body>
 </html>
