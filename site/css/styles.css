@@ -3,11 +3,6 @@
     font-size: 10px;
     background-repeat:no-repeat;
 }
-.container{
-    width: 1082px;
-    background-color: #faf4f2;
-    margin: 0 auto;
-}
 h1, h2, h3{
     font-family: 'Archivo Black', sans-serif;
 }
@@ -21,6 +16,12 @@ h2{
     -moz-border-radius: 11px 11px 11px 11px;
     -webkit-border-radius: 11px 11px 11px 11px;
     border: 0px solid #000000;
+}
+.container{
+    width: 1082px;
+    background-color: #faf4f2;
+    margin: 0 auto;
+    padding-bottom:2000px;
 }
 /********************************** HEADER STUFF ************************************/
 /********************************** HEADER STUFF ************************************/
@@ -164,6 +165,7 @@ h2{
     background-size: 148%;
     background-position-x: -305px;
     background-position-y: -174px;
+    margin-bottom: 85px;
     
 }
 .explore h2{
@@ -255,4 +257,82 @@ h2{
     margin-top: 22px;
     color: #e76f51;
     font-weight: bold;
+}
+/***************** END EXPLORE SECTION ********************/
+
+/**************** START EMAIL SECTION *********************/
+/**************** START EMAIL SECTION *********************/
+/**************** START EMAIL SECTION *********************/
+.email{
+    width: 855px;
+    height: 220px;
+    margin:0 auto;
+    display: flex;
+    justify-content: space-around;
+    background-image:url('../assets/curve.png');
+    background-size: cover;
+    background-color: #f8e1db;
+}
+.email .form{
+    display: flex;
+    flex-direction: column;
+    margin-left: 60px;
+    width: 50%;
+    margin-top: 50px;
+    cursor: text;
+}
+.email .form p{
+    margin-top:5px;
+    font-weight: bold;
+}
+.email .form .input-container{
+    width: 348px;
+    height: 46px;
+    background-color: white;
+    margin-top:21px;
+    position:relative;
+}
+.email .form .input-container input{
+    border: none;
+    width: 90%;
+    height: 100%;
+    padding-left: 28px;
+}
+.email .form .input-container input:focus{
+    border: none;
+    outline: none;
+}
+.email .form .input-container label{
+    background-image: url('../assets/email-icon.png');
+    background-size: 15px 11px;
+    position: absolute;
+    padding-left: 25px;
+    background-position-y: 2px;
+    margin-left: 17px;
+    margin-top: 15px;
+    color: #b1b1b1;
+    cursor: text;
+}
+.email .form .input-container .submit{
+
+    background-image:url('../assets/submit.png');
+    background-size:contain;
+    position: absolute;
+    right: -18px;
+    top: -11px;
+    width: 76px;
+    height: 76px;
+    cursor: pointer;
+}
+.email .email-img{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-right: -15px;
+    width: 50%;
+    align-items: center;
+}
+.email .email-img img{
+    height: 92%;
+    margin-left: 20px;
 }
