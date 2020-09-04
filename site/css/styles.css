@@ -26,6 +26,8 @@ h2{
     border: 0px solid #000000;
 }
 .container{
+    opacity: 0;
+    visibility: 0;
     width: 1082px;
     background-color: #faf4f2;
     margin: 0 auto;
@@ -42,7 +44,6 @@ h2{
     display: flex;
     justify-content: flex-start;
     margin: 0 auto;
-    width: 855px;
     padding-top: 35px;
     font-size: 10px;
 }
@@ -129,7 +130,6 @@ h2{
 }
 
 .header .hero-links{
-    width: 855px;
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
@@ -204,18 +204,16 @@ h2{
     background-image: url('../assets/map.png');
     background-size: contain;
 }
-.explore .explore-list{
-    width: 100%;
+.explore #explore-list{
     flex-direction: row;
     justify-content: flex-start;
     display: flex;
     flex-wrap:wrap;
-    width: 855px;
 }
-.explore .explore-list .card-container{
+.explore #explore-list .card-container{
     width: 25%;
 }
-.explore .explore-list .card{
+.explore #explore-list .card{
     width: 200px;
     height: 260px;
     margin: 0 auto;
@@ -228,7 +226,7 @@ h2{
     padding: 0 12px;
 
 }
-.explore .explore-list .card .heart{
+.explore #explore-list .card .heart{
     width: 23px;
     height: 23px;
     background-image: url('../assets/heart-empty.png');
@@ -238,10 +236,10 @@ h2{
     position: relative;
     cursor: pointer;
 }
-.explore .explore-list .card .heart.active{
+.explore #explore-list .card .heart.active{
     background-image: url('../assets/heart-filled.png');
 }
-.explore .explore-list .card .price{
+.explore #explore-list .card .price{
     width: 82px;
     height: 25px;
     color: #e97a5e;
@@ -256,13 +254,13 @@ h2{
     text-align: center;
     margin-top: 87px;
 }
-.explore .explore-list .card h3{
+.explore #explore-list .card h3{
     margin-top:12px;
 }
-.explore .explore-list .card p{
+.explore #explore-list .card p{
     margin-top:2px;
 }
-.explore .explore-list .card .read-more{
+.explore #explore-list .card .read-more{
     color: #838383;
     background-color: #f3f3f3;
     border-radius: 9px;
@@ -275,7 +273,7 @@ h2{
     text-align: center;
     margin-top: 18px;
 }
-.explore .view-all{
+.explore #view-all{
     border-radius:28px;
     border:1px solid #e76f51;
     display:inline-block;
@@ -293,7 +291,6 @@ h2{
 /**************** START EMAIL SECTION *********************/
 /**************** START EMAIL SECTION *********************/
 .email{
-    width: 855px;
     height: 220px;
     margin:0 auto;
     display: flex;
@@ -349,7 +346,7 @@ h2{
 .email .form .input-container:hover label {
     top: 50px;
 }
-.email .form .input-container .submit{
+.email .form .input-container #submit{
 
     background-image:url('../assets/submit.png');
     background-size:contain;
@@ -402,9 +399,7 @@ h2{
 }
 .footer .footer-container{
     display: flex;
-    width: 855px;
     margin: 0 auto;
-    
 }
 .footer .footer-container .left{
     width: 50%;
